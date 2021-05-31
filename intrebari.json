@@ -1,0 +1,27 @@
+[
+    {
+    "intrebare": "Ce contează 99% din dieta unui panda?",
+    "variante": ["Bambus", "Eucalipt", "Frunze de cires", "Frunze de salcie"],
+    "corect": "Bambus"
+    },
+    {
+    "intrebare": "Care este singurul șarpe veninos din Marea Britanie?",
+    "variante": ["Sumator", "Cobra", "Anaconda", "Șarpele de alun"],
+    "corect": "Sumator"
+    },
+    {
+    "intrebare": "Cât timp își digeră mâncarea un leneș?",
+    "variante": ["O saptamana", "Doua zile", "Doua saptamani", "O luna"],
+    "corect": "Doua saptamani"
+    },
+    {
+    "intrebare": "Care este cel mai mare mamifer?",
+    "variante": ["Balena", "Liliac", "Delfin", "Maimuta"],
+    "corect": "Balena"
+    },
+    {
+    "intrebare": "Cine este denumit regele junglei?",
+    "variante": ["Leul", "Zebra", "Pinguinul", "Foca"],
+    "corect": "Leul"
+    }
+]
