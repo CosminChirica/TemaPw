@@ -1,0 +1,15 @@
+<% if(req.session.user){ %>
+    <form action="/logout" method="post">
+        <input type="submit" value="Delogare" class="butonasaut">
+    </form>
+    <% }%>
+
+<form action="/rezultat-chestionar" method="POST" class="chestionarform" >
+    <%  intrebari.forEach(function(intrebarea, i) { %>
+        <li><%=intrebarea.intrebare%></li>
+        <%intrebarea.variante.forEach(function(varianta){ %>
+        <input type="radio" value="<%= varianta %>" name="intr<%= i %>" id="intr<%= i %>"> <label for="intr<%= i %>"><%= varianta %></label><br>
+        <%});%>
+    <%}); %>
+    <input type="submit" value="Trimite" class="butonas">
+</form>

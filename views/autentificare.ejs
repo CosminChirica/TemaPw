@@ -1,0 +1,29 @@
+<form action="/verificare-autentificare" method="POST">
+    <fieldset>
+        <legend>Introduceti datele</legend>
+        <label class="labelaut">Utilizator</label>
+        <input class="inputaut" type="text" id="numeUtilizator" name="utilizator">
+        <br>
+        <label class="labelaut">Parola</label>
+        <input class="inputaut" type="password" id="parolaUtilizator" name="parola">
+        <br>
+        <!-- <label>Nume</label>
+        <input type="text">
+        <br>
+        <label>Prenume</label>
+        <input type="text">
+        <br>
+        <label>Email</label>
+        <input type="email">
+        <br>
+        <label>Telefon</label>
+        <input type="tel"> -->
+        <br>
+        <input type="submit" value="Autentificare" class="butonasaut">
+    </fieldset>
+    <%if(cookies.mesajEroare){%>
+        <fieldset>
+            <p>Utilizator sau parola gresite!</p>
+        </fieldset>
+    <% }%>
+</form>

@@ -1,0 +1,18 @@
+<% if(req.session.user){ %>
+    <form action="/logout" method="post">
+        <input type="submit" value="Delogare" class="butonasaut">
+    </form>
+<% }%>
+
+<% var i = 0; %>
+<% var punctaj = 0;%>
+<% for(const [key,value] of Object.entries(raspunsuri)) { %>
+<%if(intrebari[i].corect == value) { punctaj+=10;} %>
+<% i++;%>
+<% }%>
+<p>Rezultat: <%= punctaj%>/<%= 50%></p>
+
+<p>Variante corecte:</p>
+<%  intrebari.forEach(function(intrebarea, i) { %>
+    <p><%=intrebarea.intrebare%> : <%=intrebarea.corect%></p>
+<%}); %>

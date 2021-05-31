@@ -1,0 +1,29 @@
+[
+    {
+         "utilizator": "coco", 
+         "parola": "coco",
+		 "nume": "Chirica",
+         "prenume": "Cosmin",
+         "varsta": "21",
+         "animal_preferat": "Caine",
+         "rasa_preferata": "Lup"
+    },
+    {
+        "utilizator": "asd", 
+        "parola": "asd",
+        "nume": "Popescu",
+        "prenume": "Andrei",
+        "varsta": "28",
+        "animal_preferat": "Pisica",
+        "rasa_preferata": "Siameza"
+   },
+   {
+    "utilizator": "aaa", 
+    "parola": "aaa",
+    "nume": "Musteata",
+    "prenume": "Vlad-Andrei",
+    "varsta": "33",
+    "animal_preferat": "Sarpe",
+    "rasa_preferata": "Cu clopotei"
+}
+]

@@ -1,0 +1,48 @@
+<% if(req.session.user){ %>
+    <form action="/logout" method="post">
+        <input type="submit" value="Delogare" class="butonasaut">
+    </form>
+    <% }%>
+
+<% if(!req.session.user){ %>
+    <form action="/autentificare" method="GET">
+        <input type="submit" value="Autentificare" class="butonasaut">
+    </form>
+<% }%>
+
+<html>
+    <head>
+        <title>Magazin de carti</title>
+        <meta charset = "utf-8" />
+        <link rel="stylesheet" type="text/css" href="public\css/stil.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    
+<p> Caine Lup - 500 Ron<input type="button" value="Adauga in cos"></p><br>
+<img src="caine.jpg" width="200px" height="200px"/>
+
+<p> Tigru - 7000 Ron<input type="button" value="Adauga in cos"></p><br>
+
+<img src="tigru.jpg" width="300px" height="200px"/>
+
+<p> Leu - 40000 Ron<input type="button" value="Adauga in cos"></p><br>
+
+<img src="leu.jpg" width="300px" height="200px"/>
+
+<p> Zebra - 23000 Ron<input type="button" value="Adauga in cos"></p><br>
+
+<img src="zebra.jpg" width="300px" height="200px"/>
+
+<p> Cangur - 9000 Ron<input type="button" value="Adauga in cos"></p><br>
+
+<img src="cangur.jpg" width="200px" height="200px"/>
+
+<p> Elefant - 50000 Ron<input type="button" value="Adauga in cos"></p><br>
+
+<img src="elefant.jpg" width="200px" height="200px"/>
+
+<p> Cobra - 3000 Ron<input type="button" value="Adauga in cos"></p><br>
+
+<img src="cobra.jpg" width="200px" height="200px"/>
+
+</html>

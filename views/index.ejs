@@ -1,0 +1,18 @@
+<% if(req.session.user){ %>
+    <form action="/logout" method="post">
+        <input type="submit" value="Delogare" class="butonasaut">
+    </form>
+
+<% }%>
+<% if(req.session.user){ %>
+<p>Bine ai venit, <%=req.session.nume%> <%=req.session.prenume%>     !</p>
+<h2>Scurte videoclipuri cu :</h2>
+<a href="/caini" id="Caini">Caini</a>
+<a href="/pisici" id="Pisici">Pisici</a>
+<a href="/hamsteri" id="Hamsteri">Hamsteri</a>
+<% } else { %>
+    <form action="/autentificare" method="GET">
+        <input type="submit" value="Autentificare" class="butonasaut">
+    </form>
+<% } %>
+</br>
